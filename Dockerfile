@@ -1,7 +1,7 @@
 # Utilisez une image Python légère comme base
 FROM python:3.10-slim
 
-ENV BUCKET_NAME="hugoat"
+ENV BUCKET_NAME="terraform-ctp-hv"
 
 # Définir le répertoire de travail
 WORKDIR /app
