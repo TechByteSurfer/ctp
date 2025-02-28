@@ -22,20 +22,20 @@ jobs:
           version: 'latest'
           project_id: '${{ secrets.GCP_PROJECT_ID }}'
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: 1.0.0
+      # - name: Setup Terraform
+      #   uses: hashicorp/setup-terraform@v1
+      #   with:
+      #     terraform_version: 1.0.0
 
-      - name: Terraform Init
-        run: |
-            cd terraform
-            terraform init
+      # - name: Terraform Init
+      #   run: |
+      #       cd terraform
+      #       terraform init
 
-      - name: Terraform Apply
-        run: |
-            cd terraform
-            terraform apply -auto-approve 
+      # - name: Terraform Apply
+      #   run: |
+      #       cd terraform
+      #       terraform apply -auto-approve 
 
       - name: Configure Docker
         run: |
