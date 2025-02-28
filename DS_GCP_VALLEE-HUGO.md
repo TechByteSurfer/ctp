@@ -7,6 +7,7 @@
 - [Les images](#les-images)
   - [Bucket](#bucket)
   - [DroitSA](#droitsa)
+- [Ressources](#ressources)
 
 
 ## Questions Ouvertes 5 points
@@ -46,3 +47,7 @@ Bonne journée, au revoir.
 
 ### DroitSA
 ![image1](./assets/droitsa.png)
+
+## Ressources
+
+Lien vers l'application -> [ICI](https://flask-app-819540265083.europe-west10.run.app/app/Bienvenue)
