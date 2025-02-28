@@ -34,6 +34,13 @@ resource "google_project_iam_member" "build" {
   member = "serviceAccount:${google_service_account.service_account.email}"
 }
 
+# Ajout iam.serviceaccounts.actAs pour le service account
+resource "google_project_iam_member" "actAs" {
+  project = var.project_id
+  role = "roles/iam.serviceAccountUser"
+  member = "serviceAccount:${google_service_account.service_account.email}"
+}
+
 # Ressource pour déployer l’application sur Cloud Run
 # avec l’image Docker déjà présente sur GCR
 resource "google_cloud_run_service" "service" {
