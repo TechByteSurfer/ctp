@@ -1,0 +1,5 @@
+project_id = "ctp-hv"
+region = "europe-west10"
+zone = "europe-west10-a"
+bucket_name = "terraform-ctp-hv"
+service_account_name = "terraform-sa-ctp-hv"
